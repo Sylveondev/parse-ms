@@ -24,7 +24,7 @@ function parseBigint(milliseconds) {
 	};
 }
 
-export default function parseMilliseconds(milliseconds) {
+module.exports = function parseMilliseconds(milliseconds) {
 	switch (typeof milliseconds) {
 		case 'number': {
 			if (Number.isFinite(milliseconds)) {
